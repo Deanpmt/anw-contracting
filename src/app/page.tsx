@@ -31,8 +31,8 @@ export default function Home() {
       <Image
         src={logotree}
         alt="Logo Tree"
-        width={250}
-        height={250}
+        width={200}
+        height={200}
         className="mb-6 animate-reveal-down"
         priority
       />
