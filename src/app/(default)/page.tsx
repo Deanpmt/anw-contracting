@@ -11,6 +11,8 @@ export default function HomePage() {
         <Image
           src="/under_construction.jpg"
           alt="Under construction"
+          width={128}
+          height={128}
           className="mx-auto mt-4 w-32 h-32 border-3 border-brand-charcoal"
         />
 
@@ -77,7 +79,7 @@ export default function HomePage() {
 
           <figure className="border-l-2 border-brand-safety/70 pl-4">
             <blockquote className="font-serif text-xl">
-              “What is the use of a house if you haven't got a tolerable planet to put it on?”
+              “What is the use of a house if you haven&apos;t got a tolerable planet to put it on?”
             </blockquote>
             <figcaption className="mt-2 text-sm text-brand-charcoal/70">
               Henry David Thoreau
