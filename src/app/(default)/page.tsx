@@ -1,5 +1,6 @@
 // src/app/(default)/page.tsx
 import Hero from "../components/Hero";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -7,7 +8,7 @@ export default function HomePage() {
       <Hero />
 
       <section className="text-center py-20">
-        <img
+        <Image
           src="/under_construction.jpg"
           alt="Under construction"
           className="mx-auto mt-4 w-32 h-32 border-3 border-brand-charcoal"
