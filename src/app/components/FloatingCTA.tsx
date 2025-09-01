@@ -2,9 +2,9 @@ export default function FloatingCTA() {
   return (
     <div
       className="
-        fixed top-16 left-1/2 -translate-x-1/2 
+        absolute top-16 left-1/2 -translate-x-1/2
         flex flex-col gap-2
-        sm:flex-row sm:gap-6 sm:top-15 lg:top-15
+        sm:flex-row sm:gap-6
         z-50
       "
     >

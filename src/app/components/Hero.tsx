@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section id='hero'className="relative overflow-hidden">
       {/* Animated Background image */}
       <motion.div
         initial={{ opacity: 0, scale: 1.05 }}
