@@ -26,7 +26,7 @@
   }
 }
 
-/* ====== Scroll in logo ====== */
+/* ====== SCROLL LOGO IN JEFF-HOLDEN page.tsx ====== */
 @keyframes reveal-down {
   0% {
     clip-path: inset(0 0 100% 0); /* fully hidden from top */

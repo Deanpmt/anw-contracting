@@ -11,38 +11,29 @@ export default function Home() {
 
   useEffect(() => {
     // match this to your logo animation duration (1.5s = 1500ms)
-    const timer = setTimeout(() => setShowTypewriter(true), 3200);
+    const timer = setTimeout(() => setShowTypewriter(true), 2200);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
-       {/* Top-left image */}
-      <div className="absolute top-4 left-4 flex items-end space-x-2">
-        <Image
-          src={logo}
-          alt="ANW Contracting Logo"
-          width={30}
-          height={30}
-          className="animate-pulse"
-        /><span className="font-serif text-sm text-center mt-2 text-brand-offwhite animate-pulse ">Aretmis Northwest LLC</span>
-      </div>
-      
+  <div className="bg-brand-evergreen p-10  mb-6 animate-scale-in">
       <Image
         src={logotree}
-        alt="Logo Tree"
-        width={200}
-        height={200}
+        alt="ANW Contracting Logo"
+        width={120}
+        height={120}
         className="mb-6 animate-reveal-down"
         priority
       />
-
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-offwhite text-center">
+      </div>
+      <div>   
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-charcole text-center">
         {showTypewriter && (
           <Typewriter
             words={[
-              'When you need trees cut,',
-              'and you want the best',
+              'When a fire calls,',
+              'and you need the best',
               'who do you call?',
               'the A Team - Jeff & Holden!!',
               'Appricate you guys!!',
@@ -56,6 +47,7 @@ export default function Home() {
           />
         )}
       </h1>
+      </div>
     </main>
   );
 }

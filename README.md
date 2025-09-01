@@ -14,6 +14,27 @@ pnpm dev
 bun dev
 ```
 
+To deploy/redeloy these in order one at a time
+
+````bash
+git add .
+# and
+git commit -m "version name"
+# and
+git push
+````
+
+To get back to the last push to github
+
+````bash
+git fetch origin
+#and
+git reset --hard orgin/main
+# and
+git stash #this will throw away all local changes
+````
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
